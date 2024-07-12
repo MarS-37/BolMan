@@ -121,9 +121,9 @@ int main() {
     }
     std::cout << "Успешно подключено к SQL Server\n";
 
-    // Форматирование дат
-    std::string minDate = "2024-01-01 00:00:00"; // Пример даты
-    std::string maxDate = "2024-01-01 23:59:59"; // Пример даты
+    // Форматирование дат  YYYY DD MM
+    std::string minDate = "2024-13-01 00:00:00"; // Пример даты
+    std::string maxDate = "2024-13-01 23:59:59"; // Пример даты
 
     // Выполнение запроса
     db.executeQuery("query.sql", 9, minDate, maxDate);
